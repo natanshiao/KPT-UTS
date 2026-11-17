@@ -8,9 +8,23 @@ Link\"LINK YT"
 
 ***KODE/LAPORAN/REPOSITORI INI DITULIS SENDIRI***
 
+## Persiapan pada host sistem
+Download python dan sqlite jika belum ada
+> ARCH LINUX
+```
+sudo pacman -S python sqlite python-pip --noconfirm
+```
+
+> UBUNTU
+```
+sudo apt python3 sqlite -y
+```
+
 ## Buat Env
 > buat python env
-```python -m venv .venv ```
+```
+python -m venv .venv
+```
 
 ## Sourcing custom env
 pilih sesuai SHELL yang sedang di gunakan
@@ -35,4 +49,9 @@ pip install --upgrade pip
 pip install -r requirement.txt
 ```
 
-## 
+## Download paket secara manual di sini
+Python
+<p><a href="https://www.python.org/downloads/" target="_blank">Python</a></p>
+Sqlite
+<p><a href="https://sqlite.org/download.html" target="_blank">Sqlite</a></p>
+
