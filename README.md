@@ -15,17 +15,24 @@ Link\"LINK YT"
 ## Sourcing custom env
 pilih sesuai SHELL yang sedang di gunakan
 > Source py .env (bash/zsh)
-```source .venv/bin/activate```
+```
+source .venv/bin/activate
+```
 
 > Source py .env (fish)
-```source .venv/bin/activate.fish```
+```
+source .venv/bin/activate.fish
+```
 
 ## pip
 > Update pip
-```pip install --upgrade pip```
+```
+pip install --upgrade pip
+```
 
 > install requirement yang di perlukan (besertakan depedensi)
-```pip install -r requirement.txt```
+```
+pip install -r requirement.txt
+```
 
-### 
-Ujian Tengah Semester.
+## 
