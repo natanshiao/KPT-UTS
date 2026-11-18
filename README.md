@@ -51,7 +51,7 @@ pip install -r requirement.txt
 
 ## Download paket secara manual di sini
 Python
-<p><a href="https://www.python.org/downloads/" target="_blank">Python</a></p>
+<p><a href="https://www.python.org/downloads/" target="_blank">Download</a></p>
 Sqlite
-<p><a href="https://sqlite.org/download.html" target="_blank">Sqlite</a></p>
+<p><a href="https://sqlite.org/download.html" target="_blank">Download</a></p>
 
