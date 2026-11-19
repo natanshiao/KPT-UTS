@@ -1,4 +1,5 @@
-Link\"LINK YT"
+<p><a href="https://youtu.be/_WVJKDrSXW8" target="_blank">Video Penjelasan (YT)</a></p>
+
 # UTS KOMPUTASI PARAREL DAN TERDISTRIBUSI
 
 **Nama: Denathan**
