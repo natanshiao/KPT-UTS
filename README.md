@@ -6,7 +6,7 @@ Link\"LINK YT"
 **Kelas: 31**
 **Mata Kuliah: Komputasi Pararel dan Terdistribusi**
 
-***KODE/LAPORAN/REPOSITORI INI DITULIS SENDIRI***
+***Tugas Ini di Assist oleh AI, Mustahil dilakukan sendiri Dalam waktu singkat dan dalam Waktu Kerja Praktik, Tidak semua komponen pada repositori ini AI Assisted***
 
 ## Persiapan pada host sistem
 Download python dan sqlite jika belum ada
@@ -48,6 +48,35 @@ pip install --upgrade pip
 ```
 pip install -r requirement.txt
 ```
+
+## Cara Menggunakan
+> Siapkan seed
+```
+python seed.py
+```
+
+> Jalankan API
+```
+uvicorn main:app --host 127.0.0.1 --port 8000
+```
+
+> test race (transaction berada routes/transaction*) dan di deklarasi pada main.py
+```
+python test_race.py
+```
+
+## Benchmark
+> Jalankan API
+```
+uvicorn main:app --host 127.0.0.1 --port 8000 --workers N 
+```
+Ganti N dengan banyak workers yang di inginkan
+
+> jalakan locust
+```
+locust -f locustfile.py
+```
+
 
 ## Download paket secara manual di sini
 Python
