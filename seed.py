@@ -5,7 +5,7 @@ from database import DATABASE_NAME, init_db
 
 # Data, data, data.
 BOOKS = [
-    ("Belajar Python", "Budi Santoso", "BK001", "Alam", 2023, 5),
+    ("Belajar Python", "Budi Santoso", "BK001", "Alam", 2023, 80),
     ("Dasar Menjadi Presiden", "Siti Aminah", "BK002", "Politik", 2022, 8),
     ("Algoritma dan Pemrograman", "Andi Wijaya", "BK003", "Teknologi", 2021, 6),
     ("Jaringan Kartel", "Rina Putri", "BK004", "Geografis", 2020, 4),

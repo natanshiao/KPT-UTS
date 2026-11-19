@@ -1,7 +1,0 @@
-INSERT INTO rak_buku (nama_buku, penulis_buku) VALUES
-('Cara Menjadi Pemimpin 3 Periode', 'JoeKoWhi'),
-('Panduan Ternak Lele Edisi 2026', 'Jensen Houang'),
-('Bisakah Kode Python Menjadi Python Sungguhan?', 'Andi'),
-('Jadi, Mereka Orang Tua siapa?', 'Budi'),
-('Tanam Sawit Kita Bersama', 'PraBopo'),
-('Financial Freedom Like Sunday', 'Teronok Ispan');
