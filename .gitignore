@@ -3,3 +3,4 @@ secret.txt
 scratchpad.txt
 routes/__pycache__/*
 __pycache__/
+docs/.*
