@@ -12,6 +12,34 @@ router = APIRouter(
 # Membuat lock untuk mengamankan perubahan stok.
 stok_lock = asyncio.Lock()
 
+# Endpoint untuk mengambil histori transaksi.
+@router.get("/")
+async def histori_transaksi(skip: int = 0, limit: int = 10):
+
+    async with aiosqlite.connect(DATABASE_NAME) as db:
+
+        # Mengambil histori transaksi beserta nama buku.
+        db.row_factory = aiosqlite.Row
+
+        cursor = await db.execute("""
+            SELECT
+                t.id,
+                t.buku_id,
+                r.nama_buku,
+                t.jenis,
+                t.jumlah,
+                t.created_at
+            FROM transaksi_buku AS t
+            LEFT JOIN rak_buku AS r
+                ON t.buku_id = r.id
+            ORDER BY t.id DESC
+            LIMIT ? OFFSET ?
+        """, (limit, skip))
+
+        rows = await cursor.fetchall()
+
+        # Mengubah hasil query menjadi JSON.
+        return [dict(row) for row in rows]
 
 @router.post("/borrow", status_code=201)
 async def borrow_book(buku_id: int, jumlah: int = 1):
