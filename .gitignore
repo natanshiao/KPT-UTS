@@ -1,5 +1,5 @@
 .venv
 secret.txt
 scratchpad.txt
-routes/__pycache__/
+routes/__pycache__/*
 __pycache__/
